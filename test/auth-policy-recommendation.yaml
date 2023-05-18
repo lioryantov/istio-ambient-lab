@@ -1,0 +1,14 @@
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: "recommendation-rbac"
+  namespace: test
+spec:
+  selector:
+    matchLabels:
+      app: recommendation
+  action: ALLOW
+  rules:
+  - from:
+    - source:
+        principals: ["cluster.local/ns/test/sa/web-api"]

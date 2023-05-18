@@ -1,0 +1,20 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: web-k8s-dashboard-vs
+  namespace: kubernetes-dashboard
+spec:
+  hosts:
+  - "lior-k8s.dev.att.com"
+  gateways:
+  - web-k8s-dashboard-gateway
+  tls:
+  - route:
+    - destination:
+        host: kubernetes-dashboard.kubernetes-dashboard.svc.cluster.local
+        port:
+          number: 443
+    match:
+    - port: 443
+      sniHosts:
+      - lior-k8s.dev.att.com

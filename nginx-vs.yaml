@@ -1,0 +1,20 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: nginx-ingress-vs
+  namespace: istio-test
+spec:
+  hosts:
+  - "lior-nginx.dev.att.com"
+  gateways:
+  - nginx-ingress-gateway
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: nginx-service.istio-test.svc.cluster.local
+        port:
+          number: 80
+

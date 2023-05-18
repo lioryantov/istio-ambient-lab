@@ -1,0 +1,14 @@
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: "purchase-history-rbac"
+  namespace: test
+spec:
+  selector:
+    matchLabels:
+      istio.io/gateway-name: purchase-history
+  action: ALLOW
+  rules:
+  - from:
+    - source:
+        principals: ["cluster.local/ns/test/sa/recommendation"]
