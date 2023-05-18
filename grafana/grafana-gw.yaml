@@ -1,8 +1,8 @@
 apiVersion: networking.istio.io/v1beta1
 kind: Gateway
 metadata:
-  name: nginx-ingress-gateway
-  namespace: istio-test
+  name: grafana-gateway
+  namespace: istio-system
 spec:
   selector:
     istio: ingressgateway 
@@ -15,4 +15,4 @@ spec:
       mode: SIMPLE
       credentialName: nginx-ingress-tls
     hosts:
-    - "lior-nginx.dev.att.com"
+    - "my-grafana.dev.company.com"

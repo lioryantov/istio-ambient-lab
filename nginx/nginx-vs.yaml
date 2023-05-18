@@ -5,7 +5,7 @@ metadata:
   namespace: istio-test
 spec:
   hosts:
-  - "lior-nginx.dev.att.com"
+  - "my-nginx.dev.company.com"
   gateways:
   - nginx-ingress-gateway
   http:

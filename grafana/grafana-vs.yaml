@@ -5,7 +5,7 @@ metadata:
   namespace: istio-system
 spec:
   hosts:
-  - "lior-grafana.dev.att.com"
+  - "my-grafana.dev.company.com"
   gateways:
   - grafana-gateway
   http:

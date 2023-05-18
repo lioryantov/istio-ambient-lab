@@ -14,4 +14,4 @@ spec:
     tls:
       mode: PASSTHROUGH
     hosts:
-    - "lior-k8s.dev.att.com"
+    - "web-k8s-dashboard.dev.company.com"

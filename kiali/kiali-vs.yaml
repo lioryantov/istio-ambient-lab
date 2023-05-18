@@ -5,7 +5,7 @@ metadata:
   namespace: istio-system
 spec:
   hosts:
-  - "lior-kiali.dev.att.com"
+  - "my-kiali.dev.company.com"
   gateways:
   - kiali-gateway
   http:

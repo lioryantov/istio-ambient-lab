@@ -5,7 +5,7 @@ metadata:
   namespace: kubernetes-dashboard
 spec:
   hosts:
-  - "lior-k8s.dev.att.com"
+  - "web-k8s-dashboard.dev.company.com"
   gateways:
   - web-k8s-dashboard-gateway
   tls:
@@ -17,4 +17,4 @@ spec:
     match:
     - port: 443
       sniHosts:
-      - lior-k8s.dev.att.com
+      - web-k8s-dashboard.dev.company.com

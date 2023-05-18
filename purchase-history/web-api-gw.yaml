@@ -11,4 +11,4 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "my-istioexplained.dev.att.com"
+    - "my-webapp.dev.att.com"

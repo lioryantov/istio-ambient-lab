@@ -4,7 +4,7 @@ metadata:
   name: web-api-gw-vs
 spec:
   hosts:
-  - "my-istioexplained.dev.att.com"
+  - "my-webapp.dev.att.com"
   gateways:
   - web-api-gateway
   http:

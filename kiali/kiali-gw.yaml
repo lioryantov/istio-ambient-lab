@@ -15,4 +15,4 @@ spec:
       mode: SIMPLE
       credentialName: nginx-ingress-tls
     hosts:
-    - "lior-kiali.dev.att.com"
+    - "my-kiali.dev.company.com"
